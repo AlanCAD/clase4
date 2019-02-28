@@ -1,0 +1,19 @@
+var meses = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO"]
+var index = 0;
+
+function setup() {
+	createCanvas(400, 400);
+}
+
+function draw() {
+	background(220)
+	text(meses[index], 200, 200);
+}
+
+
+function mousePressed() {
+	index++
+	if (index == meses.length) {
+		index = 0;
+	}
+}
